@@ -195,7 +195,7 @@ func findImportComment(src *GoSource) (string, error) {
 			return filepath.SkipDir
 		}
 		switch info.Name() {
-		case "vendor", "testdata":
+		case "vendor", "testdata", "_override":
 			return filepath.SkipDir
 		}
 
